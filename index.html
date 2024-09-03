@@ -1,0 +1,778 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap project</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <!--fontawsome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
+    <script
+      src="https://kit.fontawesome.com/039d861b9f.js"
+      crossorigin="anonymous"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!--aos.animation-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--header-->
+    <header class="header">
+      <nav
+        style="background-color: rgb(221, 239, 245)"
+        class="navbar navbar-expand-md">
+        <div class="container">
+          <a class="navbar-brand lalezar" fs-3 href="#"
+            >به سایت کدآموز خوش اومدی</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5
+                class="offcanvas-title lalezar px-3"
+                fs-2
+                id="offcanvasNavbarLabel">
+                کدآموز
+              </h5>
+              <button
+                type="button"
+                style="margin-right: 250px"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1">
+                <li class="nav-item">
+                  <a class="nav-link px-3 mt-4" aria-current="page" href="#">
+                    <i
+                      class="bi bi-aspect-ratio-fill fs-4 px-2 text-primary d-md-none"></i>
+                    <span class="my-3">صفحه ی اصلی</span>
+                  </a>
+                </li>
+                <li class="nav-item px-2">
+                  <a class="nav-link mt-4" href="#">
+                    <i
+                      class="bi bi-telephone-fill fs-5 px-3 text-primary d-md-none"></i>
+                    <span class="my-3">تماس با ما</span>
+                  </a>
+                </li>
+                <li class="nav-item px-2">
+                  <a
+                    id="caret"
+                    class="nav-link mt-4"
+                    href="#collapseExample"
+                    role="button"
+                    data-bs-toggle="collapse"
+                    aria-expanded="false">
+                    <i
+                      class="fa-solid fa-graduation-cap fs-5 px-3 d-md-none text-primary"></i>
+                    <span class="my-3">دوره های آموزشی</span>
+                    <i class="bi bi-caret-down-fill"></i>
+                  </a>
+                  <div id="collapseExample" class="collapse position-md-fixed">
+                    <div class="course">
+                      <div class="course-item my-3">
+                        <i
+                          class="fa-brands fa-angular text-primary px-2 fs-3"></i>
+                        <span class="lalezar px-3">دوره ی انگولار</span>
+                      </div>
+
+                      <div class="course-item my-3">
+                        <i
+                          class="fa-brands fa-vuejs text-primary px-2 fs-3"></i>
+                        <span class="lalezar px-3">دوره ی ویو جی اس</span>
+                      </div>
+
+                      <div class="course-item my-3">
+                        <i
+                          class="fa-brands fa-react text-primary px-2 fs-3"></i>
+                        <span class="lalezar px-3">دوره ی ری اکت</span>
+                      </div>
+
+                      <div class="course-item my-3">
+                        <i
+                          class="fa-brands fa-python text-primary px-2 fs-3"></i>
+                        <span class="lalezar px-3">دوره ی پایتون</span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <hr class="my-5" />
+              <p class="lalezar text-center d-md-none">
+                کدآموزدر <span class="text-primary">شبکه های اجتماعی</span>
+              </p>
+              <div class="my-2 text-center d-md-none">
+                <i class="bi bi-linkedin fs-3 mx-3 text-primary"></i>
+                <i class="bi bi-instagram fs-3 mx-3 text-primary"></i>
+                <i class="bi bi-telegram fs-2 mx-3 text-primary"></i>
+                <i class="bi bi-youtube fs-1 mx-3 text-primary"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--welcome-->
+    <section class="welcome">
+      <div class="container" style="margin-left: 120px">
+        <div class="row align-items-center">
+          <div class="col-md-5 my-5">
+            <h2 class="my-3 lalezar">آموزش برنامه نویسی با کدآموز</h2>
+            <p class="my-3">
+              با ثبت نام در دور ه های شگفت انگیز کدآموز اطلاعات خود را در زمینه
+              ی برنامه نویسی به روش اصولی ارتقا دهید
+            </p>
+            <button class="mx-1 rounded-5 px-2 my-4 btn btn-outline-primary">
+              دوره های آموزشی
+            </button>
+            <button class="mx-1 rounded-5 px-2 my-4 btn btn-outline-primary">
+              نظرات کاربران
+            </button>
+          </div>
+
+          <div class="col-md-6 offset-md-1">
+            <img
+              style="width: 550px"
+              src="./undraw_favorite_nvoi.png"
+              class="welcome-img"
+              alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--part2-->
+    <section class="welcome">
+      <div class="container" style="margin-left: 100px">
+        <div class="row align-items-center">
+          <div class="col-md-6 offcanvas-md-1">
+            <img
+              style="width: 600px; margin-right: -150px"
+              src="./undraw_Searching_re_3ra9.png"
+              class=" "
+              alt="" />
+          </div>
+
+          <div class="col-md-3" style="margin-left: 60px">
+            <h2 class="lalezar my-4">آیا منم میتونم برنامه نویس بشم؟</h2>
+            <p class="my-5">
+              با ثبت نام در دور ه های شگفت انگیز کدآموز اطلاعات خود را در زمینه
+              ی برنامه نویسی به روش اصولی ارتقا دهید
+            </p>
+            <button class="mx-1 rounded-5 px-2 my-3 btn btn-outline-primary">
+              مشاوره رایگان
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--course-->
+    <section>
+      <div class="container">
+        <h3 class="lalezar text-center my-5">دوره های آموزشی کدآموز</h3>
+        <p class="text-center my-5">
+          برای اطلاعات بیشتر از دوره های مربوطه گزینه های دلخواه را انتخاب کنید
+        </p>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card" data-aos="flip-right">
+              <img
+                class="card-img-top img-fluid"
+                src="./javascript.jpg"
+                alt="Card image cap" />
+              <div class="card-body text-center">
+                <h5 class="card-title mt-3 lalezar fs-1">دوره جاواسکریپت</h5>
+                <p class="card-text my-5 fw-bold">
+                  برای دیدن ویدیوهای آموزشی لطفا کلیک کنید
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center px-3">
+                  <button class="btn btn-outline-primary my-3">
+                    خرید دوره
+                  </button>
+                  <span class="text-muted">1499.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card" data-aos="flip-right">
+              <img
+                class="card-img-top img-fluid"
+                src="./rwd.jpg"
+                alt="Card image cap" />
+              <div class="card-body text-center">
+                <h5 class="card-title mt-3 lalezar fs-1">
+                  دوره طراحی ریسپانسیو
+                </h5>
+                <p class="card-text my-5 fw-bold">
+                  برای دیدن ویدیوهای آموزشی لطفا کلیک کنید
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center px-3">
+                  <button class="btn btn-outline-primary my-3">
+                    خرید دوره
+                  </button>
+                  <span class="text-muted">1499.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card" data-aos="flip-right">
+              <img
+                class="card-img-top img-fluid"
+                src="./bootstrap.png"
+                alt="Card image cap" />
+              <div class="card-body text-center">
+                <h5 class="card-title mt-3 lalezar fs-1">دوره بوتسترپ</h5>
+                <p class="card-text my-5 fw-bold">
+                  برای دیدن ویدیوهای آموزشی لطفا کلیک کنید
+                </p>
+                <div
+                  class="d-flex justify-content-between align-items-center px-3">
+                  <button class="btn btn-outline-primary my-3">
+                    خرید دوره
+                  </button>
+                  <span class="text-muted">1499.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--counter-->
+    <section class="py-5 px-3 my-5">
+      <div class="container">
+        <h2 class="text-center lalezar">آمارها باعث افتخار ما هستند</h2>
+        <p class="text-center">
+          لورم ایپسوم متن ساختگی با تولید محتوای نامفهوم
+        </p>
+        <div class="row fs-1 text-center">
+          <div class="col">
+            <div class="shadow p-3 rounded-4">
+              <span
+                class="purecounter"
+                data-purecounter-start="0"
+                data-purecounter-end="200"
+                >200</span
+              >
+              <h5>دانشجویان</h5>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="shadow p-3 rounded-4">
+              <span
+                class="purecounter"
+                data-purecounter-start="0"
+                data-purecounter-end="8000"
+                >8000</span
+              >
+              <h5>بازدید</h5>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="shadow p-3 rounded-4">
+              <span
+                class="purecounter"
+                data-purecounter-start="0"
+                data-purecounter-end="5000"
+                >5000</span
+              >
+              <h5>دقیقه آموزش</h5>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="shadow p-3 rounded-4">
+              <span
+                class="purecounter"
+                data-purecounter-start="0"
+                data-purecounter-end="100"
+                >100</span
+              >
+              <h5>دوره ها</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--faq-->
+    <section>
+      <div class="container">
+        <h2 class="text-center lalezar fs-1 my-3">سوالات متداول</h2>
+        <p class="text-center my-4">
+          لورم ایپسوم متن ساختگی با تولید محتوای نامفهوم
+        </p>
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <img class="img-fluid" data-aos="zoom-in" src="./faq.png" alt="" />
+          </div>
+          <div class="col-lg-6">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne">
+                    متن تستی اول
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It
+                    is shown by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapseTwo"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo">
+                    متن تستی دوم
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong>
+                    It is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree">
+                    متن تستی سوم
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It
+                    is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo">
+                    متن تستی چهارم
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong>
+                    It is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo">
+                    متن تستی پنجم
+                  </button>
+                </h2>
+                <div
+                  id="collapseFive"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong>
+                    It is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseSix"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo">
+                    متن تستی ششم
+                  </button>
+                </h2>
+                <div
+                  id="collapseSix"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong>
+                    It is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--services-->
+    <section>
+      <div class="container my-5 ">
+        <h2 class="lalezar fs-1 text-center">خدمات کدآموز</h2>
+        <p class="fw-bold text-center">
+          برای مشاهده ی بیشتر روی هر باکس کلیک کنید
+        </p>
+        <div class="row text-center justify-content-center">
+          <div class="col-12 col-lg-3 my-3" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+            <div class="service border shadow-lg rounded-4 p-5">
+              <i
+                style="color: rgb(27, 27, 235)"
+                class="bi bi-cup-hot-fill fs-1"></i>
+              <h3 class="lalezar fs-3">لورم ایپسوم</h3>
+              <p class="my-4">
+                لورم ایپسوم متن ساختگی با تولید محتوای ساده نامفهوم
+              </p>
+              <button class="btn btn-outline-primary  mt-4">
+                مشاهده ی بیشتر
+              </button>
+            </div>
+          </div>
+           <div class="col-12 col-lg-3 my-3 mx-2 " data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+            <div class="service-2 border shadow-lg rounded-4 p-5">
+              <i style="color: rgb(169, 172, 2)" class="bi bi-flower1 fs-1"></i>
+              <h3 class="lalezar fs-3">لورم ایپسوم</h3>
+              <p class="my-4">
+                لورم ایپسوم متن ساختگی با تولید محتوای ساده نامفهوم
+              </p>
+              <button class="btn btn-outline-warning mt-4">
+                مشاهده ی بیشتر
+              </button>
+            </div>
+</div>
+<div class="col-12 col-lg-3 my-3" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+<div class="service-3 border shadow-lg rounded-4 p-5">
+              <i
+                style="color: rgb(8, 133, 8)"
+                class="bi bi-bag-heart-fill fs-1"></i>
+              <h3 class="lalezar fs-3">لورم ایپسوم</h3>
+              <p class="my-4">
+                لورم ایپسوم متن ساختگی با تولید محتوای ساده نامفهوم
+              </p>
+              <button class="btn btn-outline-success mt-4">
+                مشاهده ی بیشتر
+              </button>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--price-->
+    <section class="py-5 px-3">
+      <div class="container">
+        <h2 class="lalezar text-center">قیمت خدمات کدآموز</h2>
+        <p class="fw-bold pt-3 pb-4 text-center">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p>
+        <div class="row text-center justify-content-center">
+          <div class="col-12 col-lg-3 my-2">
+<div class="card shadow" data-aos="zoom-in">
+  <img class="card-img-top pt-3" src="./pricing1.png" alt="Card image cap">
+  <div class="card-body">
+    <h4 class="fw-bold my-3">پلن رایگان</h4>
+    <p><SPan class="text-danger fw-bold">0تومان</SPan> درماه</p>
+  </div>
+  <div class="card-body">
+    <ul class="list-group list-group-flush">
+    <li class="list-group-item">
+      <i class="bi bi-alarm-fill fs-3 ms-5"></i>
+      <span>پلن اول</span>
+    </li>
+    <li class="list-group-item">
+      <i class="bi bi-bell-fill fs-3 ms-5"></i>
+      <span>پلن دوم</span>
+    </li>
+    <li class="list-group-item">
+      <i class="bi bi-hourglass-split fs-3 ms-5"></i>
+      <span>پلن سوم</span>
+    </li>
+  </ul>
+  <button class="btn btn-outline-primary my-5">خرید پلن</button>
+  </div>
+</div>
+
+</div>
+
+   <div class="col-12 col-lg-3 my-2">
+<div class="card shadow " data-aos="zoom-in">
+  <img class="card-img-top pt-3" src="./pricing2.png" alt="Card image cap">
+  <div class="card-body">
+    <h4 class="fw-bold my-3">پلن رایگان</h4>
+    <p><SPan class="text-danger fw-bold">0تومان</SPan> درماه</p>
+  </div>
+  <div class="card-body">
+    <ul class="list-group list-group-flush">
+    <li class="list-group-item">
+      <i class="bi bi-alarm-fill fs-3 ms-5"></i>
+      <span>پلن اول</span>
+    </li>
+    <li class="list-group-item">
+      <i class="bi bi-bell-fill fs-3 ms-5"></i>
+      <span>پلن دوم</span>
+    </li>
+    <li class="list-group-item">
+      <i class="bi bi-hourglass-split fs-3 ms-5"></i>
+      <span>پلن سوم</span>
+    </li>
+  </ul>
+  <button class="btn btn-outline-primary my-5">خرید پلن</button>
+  </div>
+</div>
+
+</div>
+
+   <div class="col-12 col-lg-3 my-2">
+<div class="card shadow" data-aos="zoom-in">
+  <img class="card-img-top pt-3" src="./pricing3.png" alt="Card image cap">
+  <div class="card-body">
+    <h4 class="fw-bold my-3">پلن رایگان</h4>
+    <p><SPan class="text-danger fw-bold">0تومان</SPan> درماه</p>
+  </div>
+  <div class="card-body">
+    <ul class="list-group list-group-flush">
+    <li class="list-group-item">
+      <i class="bi bi-alarm-fill fs-3 ms-5"></i>
+      <span>پلن اول</span>
+    </li>
+    <li class="list-group-item">
+      <i class="bi bi-bell-fill fs-3 ms-5"></i>
+      <span>پلن دوم</span>
+    </li>
+    <li class="list-group-item">
+      <i class="bi bi-hourglass-split fs-3 ms-5"></i>
+      <span>پلن سوم</span>
+    </li>
+  </ul>
+  <button class="btn btn-outline-primary my-5">خرید پلن</button>
+  </div>
+</div>
+
+</div>
+
+   <div class="col-12 col-lg-3 my-2">
+<div class="card shadow">
+  <img class="card-img-top pt-3" src="./pricing4.png" alt="Card image cap">
+  <div class="card-body">
+    <h4 class="fw-bold my-3">پلن رایگان</h4>
+    <p><SPan class="text-danger fw-bold">0تومان</SPan> درماه</p>
+  </div>
+  <div class="card-body">
+    <ul class="list-group list-group-flush">
+    <li class="list-group-item">
+      <i class="bi bi-alarm-fill fs-3 ms-5"></i>
+      <span>پلن اول</span>
+    </li>
+    <li class="list-group-item">
+      <i class="bi bi-bell-fill fs-3 ms-5"></i>
+      <span>پلن دوم</span>
+    </li>
+    <li class="list-group-item">
+      <i class="bi bi-hourglass-split fs-3 ms-5"></i>
+      <span>پلن سوم</span>
+    </li>
+  </ul>
+  <button class="btn btn-outline-primary my-5">خرید پلن</button>
+  </div>
+</div>
+
+</div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!--footer-->
+<footer class="py-5 px-3">  
+  <div class="container">  
+    <div class="row">  
+      <div class="col-lg-5">  
+        <h4 class="fw-bold">codeAmooz.com</h4>  
+        <p>ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p>  
+      </div>  
+      <div class="col-lg-12">   
+        <h4 class="fw-bold my-4 border-bottom border-4 border-info pb-3 w-50">لینک ها</h4>  
+        <p>  
+          <i class="bi bi-caret-left"></i> صفحه اصلی  
+        </p>  
+        <p>  
+          <i class="bi bi-caret-left"></i> محصولات  
+        </p>  
+        <p>  
+          <i class="bi bi-caret-left"></i> درباره ی ما  
+        </p>  
+        <p>  
+          <i class="bi bi-caret-left"></i> خدمات  
+        </p>  
+      </div> 
+      <div class="col-lg-12">   
+        <h4 class="fw-bold border-bottom border-4 border-warning pb-3 w-50"> خدمات</h4>  
+        <p>  
+          <i class="bi bi-caret-left"></i> صفحه اصلی  
+        </p>  
+        <p>  
+          <i class="bi bi-caret-left"></i> محصولات  
+        </p>  
+        <p>  
+          <i class="bi bi-caret-left"></i> درباره ی ما  
+        </p>  
+        <p>  
+          <i class="bi bi-caret-left"></i> خدمات  
+        </p>  
+      </div>
+      <div class="col-lg-12">   
+        <h4 class="fw-bold border-bottom border-4 border-danger pb-3 w-50"> ارتباط با ما</h4>  
+        <p>  
+          <i class="bi bi-caret-left"></i> صفحه اصلی  
+        </p>  
+        <p>  
+          <i class="bi bi-caret-left"></i> محصولات  
+        </p>  
+        <p>  
+          <i class="bi bi-caret-left"></i> درباره ی ما  
+        </p>  
+        <p>  
+          <i class="bi bi-caret-left"></i> خدمات  
+        </p>  
+      </div> 
+    </div>  
+  </div>  
+</footer>
+
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!--aos.animation-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!--purecounter.js-->
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+    <script>
+      new PureCounter();
+    </script>
+  </body>
+</html>

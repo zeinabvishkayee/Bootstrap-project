@@ -1,0 +1,49 @@
+/**
+ * vazir
+ *
+ * @format
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap');
+/* lalezar*/
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&family=Vazirmatn:wght@100..900&display=swap');
+.lalezar {
+  font-family: lalezar;
+}
+@font-face {
+  font-family: 'vazirmatn';
+  src: url('https://fonts.googleapis.com/css2?family=Lalezar&family=Vazirmatn:wght@100..900&display=swap');
+}
+@media screen and (min-width: 768px) {
+  .position-md-fixed {
+    position: fixed;
+  }
+}
+.course {
+  width: 300px;
+  height: 200px;
+  border: 1px solid #ddd;
+  border-radius: 17px;
+  background: #fff;
+  padding: 10px 0;
+}
+
+.course-item{
+display: flex;
+}
+.course-item:hover{
+    background-color: rgb(197, 227, 236);
+}
+
+.service:hover{
+  background-color: rgb(128, 128, 221);
+}
+.service-2:hover{
+  background-color: rgb(239, 241, 88);
+}
+.service-3:hover{
+  background-color: rgb(53, 221, 53);
+}
+footer{
+  background-color: #f2f5fc;
+}
